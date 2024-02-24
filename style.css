@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+* {
+    font-size: 36px;
+    color: white;
+    font-family: 'Outfit';
+}
+
+input {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 95vw;
+    border-color: white;
+}
+
+button {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.timestamp{
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+}
