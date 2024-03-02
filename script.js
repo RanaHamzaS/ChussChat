@@ -1,24 +1,17 @@
+const USERNAME = prompt('Whats your name');
+
 let ipAddress = "https://d032-113-203-198-47.ngrok-free.app"
 function handleSend() {
   let iv = document.querySelector('textarea').value
-  let postData = { message: iv }
-  let chatPanel = document.querySelector('#chat-panel')
-  let createdAt = new Date().toTimeString()
-  chatPanel.innerHTML += `<li>Hamza: ${iv}</li> <div class="timestamp" >${createdAt} </div> `
+  let postData = { message: iv, sentBy: USERNAME, createdAt: new Date().toLocaleTimeString() }
 
-  fetch(ipAddress + '/api', {
+  fetch(ipAddress + '/send-message', {
     method: 'POST', // skip
     headers: {
       'Content-Type': 'application/json' // skip
     },
     body: JSON.stringify(postData) // skip [data ja...]
   })
-    .then(response => response.json()) // skip
-    .then(data => {
-      console.log(data)
-      let chatPanel = document.querySelector('#chat-panel')
-      chatPanel.innerHTML += `<li>Darab: ${data.reply}</li> <div class="timestamp" >${data.createdAt} </div></li>`
-    })
 }
 
 function handleLoad() {
@@ -76,12 +69,6 @@ fetch(ipAddress + '/get-users', {
 
 
 document.addEventListener('keydown', (event) => {
-  console.log(event);
-  // if (event.key == 'Enter' && event.shiftKey == true) {
-  //   // next line func
-  //   document.querySelector('textarea').value += '\n';
-
-  // } else 
   if (event.key == 'Enter') {
     handleSend()
     document.querySelector('textarea').value = ''
