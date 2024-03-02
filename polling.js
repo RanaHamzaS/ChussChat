@@ -3,7 +3,6 @@ setInterval(() => {
     fetch(ipAddress + '/get-messages').then(lock => lock.json()).then((message) => {
         chatPanel.innerHTML = "";
         console.log(message);
-        debugger;
         for (let index = 0; index < message.length; index++) {
             const element = message[index];
             const messageContent = element.message;
