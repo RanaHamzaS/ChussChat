@@ -10,11 +10,11 @@ body {
     font-family: 'Outfit';
 }
 
-input {
+textarea {
     background-color: transparent;
     position: absolute;
     bottom: 0;
-    width: 95vw;
+    width: 90vw;
     border-color: white;
 }
 
@@ -23,8 +23,13 @@ button {
     position: absolute;
     bottom: 0;
     right: 0;
+    
 }
 .timestamp{
     font-size: 15px;
     color: rgb(102, 102, 102);
+}
+#name{
+    color: rgb(102, 102, 102);
+    font-size: medium;
 }
