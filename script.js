@@ -1,5 +1,7 @@
 let USERNAME;
-if (localStorage.getItem('userName')) {} else {
+if (localStorage.getItem('userName')) {
+  USERNAME = localStorage.getItem('userName')
+} else {
   USERNAME = prompt('Whats your name');
   localStorage.setItem('userName', USERNAME);
 }
@@ -8,6 +10,7 @@ let ipAddress = "https://d032-113-203-198-47.ngrok-free.app"
 function handleSend() {
   let iv = document.querySelector('textarea').value
   let postData = { message: iv, sentBy: USERNAME, createdAt: new Date().toLocaleTimeString() }
+  console.log(postData);
 
   fetch(ipAddress + '/send-message', {
     method: 'POST', // skip
