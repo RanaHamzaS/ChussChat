@@ -9,8 +9,9 @@ setInterval(() => {
             const sentBy = element.sentBy;
             const createdAt = element.createdAt;
             if (messageContent != undefined && sentBy != undefined && createdAt != undefined) {
-                chatPanel.innerHTML += `<li>${sentBy}: ${messageContent}</li> <div class="timestamp">${createdAt}</div></li>`
+                chatPanel.innerHTML += `<li>${sentBy}: ${messageContent}</li> <div class="timestamp">${createdAt}</div></li>`   
             }
         }
+        chatPanel.scrollTop = chatPanel.scrollHeight
     })
 }, 250);
