@@ -1,4 +1,8 @@
-const USERNAME = prompt('Whats your name');
+let USERNAME;
+if (localStorage.getItem('userName')) {} else {
+  USERNAME = prompt('Whats your name');
+  localStorage.setItem('userName', USERNAME);
+}
 
 let ipAddress = "https://d032-113-203-198-47.ngrok-free.app"
 function handleSend() {
@@ -74,3 +78,7 @@ document.addEventListener('keydown', (event) => {
     document.querySelector('textarea').value = ''
   }
 });
+
+function handleRemove() {
+  fetch(ipAddress + '/remove-history')
+}

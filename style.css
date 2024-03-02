@@ -10,20 +10,11 @@ body {
     font-family: 'Outfit';
 }
 
-textarea {
-    background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    width: 90vw;
-    border-color: white;
-}
-
 button {
     background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 .timestamp{
     font-size: 15px;
@@ -32,4 +23,22 @@ button {
 #name{
     color: rgb(102, 102, 102);
     font-size: medium;
+}
+
+#chat-box {
+    background-color: rgb(53, 53, 53);
+    position: fixed;
+    bottom: 10px;
+    width: 90vw;
+    border-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#del-his {
+    padding: 12px;
+    background-color: rgb(196, 0, 0);
+    color: white;
 }

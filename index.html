@@ -9,17 +9,18 @@
 </head>
 <body onload="handleLoad()">
     <!-- <input type="text" > -->
-    <textarea></textarea>
+    <textarea id="chat-box" placeholder="Type your message here.."></textarea>
     <button onclick="handleSend()">Send</button>
-    <div>
-        Chat History!
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div>Chat History!</div>
+        <div id="del-his" onclick="handleRemove()">Delete History!</div>
     </div>
     <div id="name"></div>
     <ul id="chat-panel">
 
     </ul>
     <!-- <div id="icon">i</div> -->
-    <i onclick="info()" class="fas fa-info-circle"></i>
+    <!-- <i onclick="info()" class="fas fa-info-circle"></i> -->
 </body>
 <script src="script.js"></script>
 <script src="polling.js"></script>
