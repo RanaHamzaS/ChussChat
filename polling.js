@@ -14,4 +14,4 @@ setInterval(() => {
         }
         chatPanel.scrollTop = chatPanel.scrollHeight
     })
-}, 250);
+}, 650);
