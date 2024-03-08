@@ -6,7 +6,7 @@ if (localStorage.getItem('userName')) {
   localStorage.setItem('userName', USERNAME);
 }
 
-let ipAddress = "https://hamza-chat-backend.vercel.app"
+let ipAddress = "https://d032-113-203-198-47.ngrok-free.app"
 function handleSend() {
   let iv = document.querySelector('textarea').value
   let postData = { message: iv, sentBy: USERNAME, createdAt: new Date().toLocaleTimeString() }
