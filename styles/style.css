@@ -2,6 +2,8 @@
 
 body {
   background-color: #36393f;
+  padding: 0;
+  margin: 0;
 }
 
 * {
@@ -46,7 +48,7 @@ textarea {
   background-color: #36393f;
   position: fixed;
   bottom: 10px;
-  width: 90vw;
+  width: 75vw;
   height: 50px;
   border-color: white;
 }
@@ -55,10 +57,10 @@ textarea {
   width: 0;
 }
 
+
+
 #del-his {
-  padding: 12px;
-  background-color: rgb(196, 0, 0);
-  color: white;
+  fill: rgb(196, 0, 0);
 }
 .myMsg {
   background-color: #2f3136;

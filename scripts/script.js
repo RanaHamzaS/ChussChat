@@ -72,8 +72,6 @@ fetch(ipAddress + '/get-users', {
     console.log(data);
   })
 
-
-
 document.addEventListener('keydown', (event) => {
   if (event.key == 'Enter') {
     handleSend()

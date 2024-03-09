@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body onload="handleLoad()">
-    <!-- <input type="text" > -->
-    <textarea id="chat-box" placeholder="Type your message here.."></textarea>
-    <div class="SendBtn" onclick="handleSend()"><i style="transform: scale(50%);" class="fa fa-paper-plane"></i></div>
-    <div style="display: flex; flex-direction: row; justify-content: space-between;">
-        <div>Chat History!</div>
-        <!-- <div id="del-his" onclick="handleRemove()"><i class="fas fa-trash"></i></div> -->
+    <div style="display: flex;">
+        <div style="background-color: #2f3136; width: 15vw; height: 100dvh; padding: 24px">
+            Sidebar
+        </div>
+        <div style="width: 100vw; margin: 24px;">
+            <textarea id="chat-box" placeholder="Type your message here.."></textarea>
+            <div class="SendBtn" onclick="handleSend()"><i style="transform: scale(50%);" class="fa fa-paper-plane"></i></div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div>Hassan Umer</div>
+                <div id="del-his" onclick="handleRemove()"><i style="color: #7289da;" class="fas fa-trash"></i></div>
+            </div>
+            <div id="name"></div>
+            <ul id="chat-panel" style="height: 75vh;overflow: scroll;margin: 0;padding: 0 0;">
+            </ul>
+        </div>
     </div>
-    <div id="name"></div>
-    <ul id="chat-panel" style="height: 75vh;overflow: scroll;margin: 0;padding: 0 0;">
-    </ul>
 </body>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/polling.js"></script>
