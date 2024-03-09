@@ -85,4 +85,5 @@ function handleRemove() {
   fetch(ipAddress + '/remove-history')
 }
 function SignIn(){
-console.log("ho")}
+  window.location.href = '/'
+}
