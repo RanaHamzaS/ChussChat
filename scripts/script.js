@@ -2,8 +2,7 @@ let USERNAME;
 if (localStorage.getItem('userName')) {
   USERNAME = localStorage.getItem('userName')
 } else {
-  USERNAME = prompt('Whats your name');
-  localStorage.setItem('userName', USERNAME);
+  window.location.href = '/login.html'
 }
 
 let ipAddress = "https://hamza-chat-backend.vercel.app"
@@ -85,3 +84,5 @@ document.addEventListener('keydown', (event) => {
 function handleRemove() {
   fetch(ipAddress + '/remove-history')
 }
+function SignIn(){
+console.log("ho")}
