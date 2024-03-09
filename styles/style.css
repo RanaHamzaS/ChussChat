@@ -61,7 +61,7 @@ textarea {
   color: white;
 }
 .myMsg {
-  /* background-color: rgb(87, 84, 84); */
+  background-color: #2f3136;
   text-align: end;
   margin: 8px 8px 8px auto;
   width: fit-content;
@@ -71,7 +71,7 @@ textarea {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .yourMsg {
-  /* background-color: rgb(87, 84, 84); */
+  background-color: #2f3136;
   text-align: end;
   margin: 8px 8px 8px 8px;
   width: fit-content;

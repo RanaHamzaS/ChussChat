@@ -2,10 +2,10 @@ let USERNAME;
 if (localStorage.getItem('userName')) {
   USERNAME = localStorage.getItem('userName')
 } else {
-  window.location.href = '/login.html'
+  // window.location.href = '/login.html'
 }
 
-let ipAddress = "https://hamza-chat-backend.vercel.app"
+let ipAddress = " https://6a6a-113-203-199-123.ngrok-free.app"
 function handleSend() {
   let iv = document.querySelector('textarea').value
   let postData = { message: iv, sentBy: USERNAME, createdAt: new Date().toLocaleTimeString() }
