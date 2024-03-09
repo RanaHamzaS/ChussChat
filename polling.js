@@ -8,8 +8,17 @@ setInterval(() => {
             const sentBy = element.sentBy;
             const createdAt = element.createdAt;
             if (messageContent != undefined && sentBy != undefined && createdAt != undefined) {
-                chatPanel.innerHTML += `<li>${sentBy}: ${messageContent}</li> <div class="timestamp">${createdAt}</div></li>`
+                // Runs when the message content is not empty as well as sendBy and createdAt..
+
+                if(sentBy == USERNAME){
+                    // message sent by me..
+                    chatPanel.innerHTML += `<div Class ="myMsg"><li style = "font-size : 12px; opacity: 60%" >${sentBy}</li> <li>${messageContent}</li> <div class="timestamp">${createdAt}</div></li></div>`
+                } else {
+                    // message sent by anyone else..
+                    chatPanel.innerHTML += `<div Class ="yourMsg"><li style = "font-size : 12px; opacity: 60%" >${sentBy}</li><li> ${messageContent}</li> <div class="timestamp">${createdAt}</div></li></div>`
+                }
             }
+        
         }
     })
 }, 650);

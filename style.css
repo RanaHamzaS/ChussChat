@@ -1,47 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 body {
-    background-color: rgb(53, 53, 53);
+  background-color: rgb(53, 53, 53);
 }
 
 * {
-    font-size: 36px;
-    color: white;
-    font-family: 'Outfit';
+  font-size: 36px;
+  color: white;
+  font-family: "Outfit";
 }
 
-button {
-    background-color: transparent;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    height: 55px;
-    width: 15vw;
+.SendBtn {
+  background-color: white;
+  position: fixed;
+  bottom: 11px;
+  right: 11px;
+  height: 50px;
+  width: 15vw;
+  box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.208);
+  color: black;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 6px;
 }
-.timestamp{
-    font-size: 15px;
-    color: rgb(102, 102, 102);
+.timestamp {
+  font-size: 15px;
+  color: rgb(102, 102, 102);
 }
-#name{
-    color: rgb(102, 102, 102);
-    font-size: medium;
+#name {
+  color: rgb(102, 102, 102);
+  font-size: medium;
 }
 
 #chat-box {
-    background-color: rgb(53, 53, 53);
-    position: fixed;
-    bottom: 10px;
-    width: 80vw;
-    height: 50px;
-    border-color: white;
+  background-color: rgb(53, 53, 53);
+  position: fixed;
+  bottom: 10px;
+  width: 80vw;
+  height: 50px;
+  border-color: white;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 #del-his {
-    padding: 12px;
-    background-color: rgb(196, 0, 0);
-    color: white;
+  padding: 12px;
+  background-color: rgb(196, 0, 0);
+  color: white;
+}
+.myMsg {
+  border: 1px solid rgba(255, 255, 255, 0.218);
+  /* background-color: rgb(87, 84, 84); */
+  text-align: end;
+  margin: 8px 8px 8px auto;
+  width: fit-content;
+  list-style: none;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.208);
+}
+.yourMsg {
+  border: 1px solid rgba(255, 255, 255, 0.218);
+  /* background-color: rgb(87, 84, 84); */
+  text-align: end;
+  margin: 8px 8px 8px 8px;
+  width: fit-content;
+  list-style: none;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.208);
 }
