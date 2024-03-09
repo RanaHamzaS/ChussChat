@@ -11,17 +11,23 @@ body {
 }
 
 .SendBtn {
-  background-color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 100, 3, 1) 0%,
+    rgba(0, 161, 21, 1) 100%
+  );
   position: fixed;
   bottom: 11px;
-  right: 11px;
-  height: 50px;
-  width: 15vw;
+  right: 2vw;
+  height: 55px;
+  width: 55px;
   box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.208);
-  color: black;
-  text-align: center;
+  /* color: black; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
   padding-top: 3px;
-  border-radius: 6px;
+  border-radius: 50%;
 }
 .timestamp {
   font-size: 15px;
@@ -36,7 +42,7 @@ body {
   background-color: rgb(53, 53, 53);
   position: fixed;
   bottom: 10px;
-  width: 80vw;
+  width: 90vw;
   height: 50px;
   border-color: white;
 }
